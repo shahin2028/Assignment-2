@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c9c20488b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Upcomming Matches</title>
+    <style>
+        /* here the selected bitton is changed  */
+        #selected-btn {
+            color: #000000;
+            background: #ffffff;
+        }
+
+        #upcomingmatch-btn {
+            color: rgb(255, 255, 255);
+            background: #ff0000;
+        }
+
+        .main-section nav {
+            margin-right: 20px;
+        }
+
+
+        .matches {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 25px;
+        }
+
+        .match {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ebebe2;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .flags {
+            display: grid;
+            grid-template-columns: auto 20px auto;
+            grid-column-gap: 10px;
+
+        }
+
+        /* this for teblet (screen size less than 1500 pixel)  */
+        @media screen and (max-width:1000px) {
+            .matches {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .main-section nav {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        /* this for mobile (screen size less than 1000 pixel)  */
+        @media screen and (max-width:500px) {
+            .matches {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Start header -->
+
+        <header class="header">
+            <div class="header-info">
+
+                <h1>The Greatest show on the earth</h1>
+                <p>The 2022 FIFA World Cup is scheduled to be the 22nd running of the FIFA World Cup competition, the
+                    quadrennial international men's football championship contested by the senior national teams of the
+                    member associations of FIFA.</p>
+                <button>watch Live <i class="fa-solid fa-chevron-right"></i> </button>
+            </div>
+            <div class="banner">
+                <img src="images/Banner Image.png">
+            </div>
+
+        </header>
+
+        <!-- end header  -->
+
+        <!-- start main  -->
+        <main class="main">
+            <section class="main-section">
+                <nav>
+                    <ul>
+                        <li><a id="upcomingmatch-btn" href="#">Upcomming Match</a></li>
+                        <li><a href="#">All Groups</a></li>
+                        <li><a id="selected-btn" href="index.html">Blocks</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="matches">
+
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+                    <article class="match">
+                        <div class="flags">
+                            <img src="images/germany Flag.png">
+                            <h3>VS</h3>
+                            <img src="images/Flag.png">
+                        </div>
+                        <div class="blog-info">
+                            <h3> Germany VS France </h3>
+                            <p>April 01,2022, 1:00 AM</p>
+                        </div>
+                    </article>
+
+
+
+
+                </div>
+
+
+
+            </section>
+
+        </main>
+        <!-- end main  -->
+
+    </div>
+
+
+    <!-- Start footer  -->
+
+    <footer>
+        <h1>Goal</h1>
+        <div class="hr"></div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Privacy Setting</a></li>
+                    <li><a href="#">Goal App</a></li>
+                    <li><a href="#">Goal Live</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="social-menu">
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/shahinbinshiraj/"><i class="fa-brands fa-facebook-square">
+                            </i>
+                            Facebook</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCw2jgataItH4yYVp1gRXwEg/videos/"><i
+                                class="fa-brands fa-linkedin"> </i>
+                            Linkedin</a></li>
+                    <li><a href="https://shahin2028.github.io/developer-portfolio-2/"><i class="fa-regular fa-user">
+                            </i>
+                            Profile</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+    <!-- End Footer  -->
+
+</body>
+
+</html>
